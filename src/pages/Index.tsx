@@ -121,18 +121,22 @@ const Index = () => {
       </p>
 
       <div className="flex flex-col mt-10 sm:flex-row gap-6 justify-center animate-fade-in">
-        <Link to="/virtual-bid-manager">
+        <Link to="/Services">
                 <Button className="bg-brand-500 text-white hover:bg-brand-600 text-lg py-6 px-10 shadow-lg transition-all duration-300 font-medium rounded-md">
-                  Virtual Bid Manager
+                  View Services
                 </Button>
               </Link>
         <Button
-          variant="outline"
-          className="border-2 border-white text-white hover:bg-white/10 text-lg py-6 px-10 transition-all duration-300 font-medium rounded-md"
-          aria-label="Learn more about our services"
-        >
-          Learn More
-        </Button>
+  className="text-white hover:bg-white/10 text-lg py-6 px-10 transition-all duration-300 font-medium rounded-md"
+  aria-label="Scroll down"
+  onClick={() => {
+    window.scrollBy({ top: 600, behavior: "smooth" }); // Change 600 to how far you want to scroll
+  }}
+>
+  Learn More
+</Button>
+
+
       </div>
     </div>
   </div>
