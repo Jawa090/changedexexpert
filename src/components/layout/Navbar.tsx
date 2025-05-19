@@ -11,7 +11,7 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const isActive = (path: string) => {
+  const isActive = (path) => {
     return location.pathname === path;
   };
 
@@ -49,15 +49,15 @@ const Navbar = () => {
       </div>
 
       {/* Navbar */}
-      <header className="w-full bg-white shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
+      <header className="w-full bg-white shadow-sm sticky top-0 z-50 h-16">
+        <div className="container mx-auto px-4 h-16 flex items-center">
+          <div className="flex items-center justify-between w-full h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2 h-20">
               <img 
-                src="/lovable-uploads/52ae9643-7094-4b5f-aa46-2fa4c721162c.png" 
+                src="/dex.png" 
                 alt="Decexperts Logo" 
-                className="h-10 w-auto" 
+                className="h-full w-auto object-contain" 
               />
               <span className="font-heading text-2xl font-bold">
                 <span className="text-brand-800">Dec</span>

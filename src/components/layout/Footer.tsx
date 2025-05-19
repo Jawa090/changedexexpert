@@ -58,7 +58,7 @@ const Footer = () => {
               
               <div className="flex items-center space-x-4">
   <img 
-    src="/lovable-uploads/52ae9643-7094-4b5f-aa46-2fa4c721162c.png" 
+    src="/dex.png" 
     alt="Decexperts Logo" 
     className="h-10 w-auto" 
   />
@@ -74,6 +74,7 @@ const Footer = () => {
 </div>
 
             </Link>
+            
             <p className="text-gray-400 leading-relaxed">
               Precision construction estimating services to help your projects stay on time and on budget.
             </p>
